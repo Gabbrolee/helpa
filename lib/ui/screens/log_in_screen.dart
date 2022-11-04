@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helpa/helpa_widget.dart';
-import 'package:helpa/otp_verification_screen.dart';
+import 'package:helpa/utility/helpa_widget.dart';
+import 'package:helpa/ui/screens/otp_verification_screen.dart';
 
 import 'forgot_password_screen.dart';
 
@@ -76,8 +76,8 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void forgotPasswordScreen(){
-   // Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen()));
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const Otp()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPasswordScreen()));
+
   }
 }
 

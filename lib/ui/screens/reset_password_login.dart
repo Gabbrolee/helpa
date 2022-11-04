@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'helpa_widget.dart';
+import '../../utility/helpa_widget.dart';
+import 'otp_verification_screen.dart';
 class ResetPasswordLogin extends StatefulWidget {
   const ResetPasswordLogin({Key? key}) : super(key: key);
 
@@ -52,7 +53,7 @@ class _ResetPasswordLoginState extends State<ResetPasswordLogin> {
             ),
             HelpaWidget.PositiveButton(
                 context, "LOGIN", () {
-              //  resetPasswordLogin(context);
+               Navigator.push(context, MaterialPageRoute(builder: (context) => const Otp()));
             },
                 // bgColor: const Color(0xFFEBEBEB),
                 // textColor: const Color(0xFFA3A5A9)

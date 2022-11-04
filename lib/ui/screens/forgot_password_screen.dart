@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:helpa/helpa_widget.dart';
+import 'package:helpa/utility/helpa_widget.dart';
 
-import '../reset_password_login.dart';
+import 'reset_password_login.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({Key? key}) : super(key: key);

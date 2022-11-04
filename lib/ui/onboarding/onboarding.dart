@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:helpa/helpa_widget.dart';
+import 'package:helpa/utility/helpa_widget.dart';
+import 'package:helpa/ui/screens/sign_up_screen.dart';
 
-import '../log_in_screen.dart';
+import '../screens/log_in_screen.dart';
 
 String description = '    Schedule appointments from verified\n'
     'service professionals or post a job to earn\n '
@@ -114,7 +115,9 @@ class _OnboardingState extends State<Onboarding> {
                       const Text('New Here?'),
                       const SizedBox(width: 5,),
                       TextButton(
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpScreen()));
+                          },
                           child: const Text(
                               'Sign Up',
                             style: TextStyle(color: Colors.black),
@@ -142,7 +145,7 @@ class _OnboardingState extends State<Onboarding> {
     );
   }
   void login(BuildContext context){
-    Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen()));
   }
 }
 
